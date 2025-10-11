@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text decoration</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- text decoration -->
+    <u>This is underline sentences.</u> <br />
+    <u class="no-underline">this is no underline effect on tailwind.</u>
+    <p class="underline">this is underline in tailwind</p>
+    <p class="line-through">this is line through in tailwild</p>
+    <p class="overline">this is overline in tailwild</p>
+    <hr />
+    <br />
+    <p class="underline hover:no-underline">
+      Hover me Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad iusto reprehenderit vel, eligendi omnis,
+      nulla maiores consequuntur laboriosam quam veniam autem alias asperiores totam molestiae quibusdam dolor animi
+      esse. Illum?
+    </p>
+    <br />
+    <br />
+    <p class="line-through hover:overline">
+      Hover Me Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime qui quod aperiam quidem similique fugit
+      sequi quaerat. Provident perferendis officia culpa vero, veritatis quisquam quis quam similique, fugit illum
+      totam.
+    </p>
+  </body>
+</html>
+
+<!-- no-underline -> text-decoration: none; -->
+<!-- underline -> text-decoration: underline; -->
+<!-- line-through -> text-decoration: line-through; -->
+<!-- overline -> text-decoration: overline; -->
