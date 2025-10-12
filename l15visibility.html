@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visibility</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      .div1 {
+        background-color: red;
+      }
+      .div2 {
+        background-color: blue;
+      }
+      .div3 {
+        background-color: orange;
+      }
+      .div4 {
+        background-color: green;
+      }
+      .div5 {
+        background-color: pink;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- visibility -->
+    <div class="div1">div 1</div>
+    <div class="div2 hidden">div 2</div>
+    <div class="div3">div 3</div>
+    <div class="div4 invisible">div 4</div>
+    <div class="div5">div 5</div>
+  </body>
+</html>
+
+<!-- 
+visible ==> visibility:visible;
+invisible ==> visibility:hidden;
+hidden ==> display: none;
+-->
