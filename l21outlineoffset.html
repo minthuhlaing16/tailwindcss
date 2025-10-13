@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>outline offset</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- outline offset -->
+    <div>
+      <button type="button" class="border-2 outline outline-2 outline-offset-0">Click</button>
+      <br />
+      <button type="button" class="border-2 outline outline-2 outline-offset-1">Click</button>
+      <br />
+      <button type="button" class="border-2 outline outline-2 outline-offset-2">Click</button>
+      <br />
+      <button type="button" class="border-2 outline outline-2 outline-offset-4">Click</button>
+      <br />
+      <button type="button" class="border-2 outline outline-2 outline-offset-8">Click</button>
+      <br />
+    </div>
+  </body>
+</html>
+<!--  
+outline-offset-0
+outline-offset-1
+outline-offset-2
+outline-offset-4
+outline-offset-8
+-->

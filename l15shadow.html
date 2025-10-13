@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shadow</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .d-flexs {
+        width: 600px;
+        display: flex;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Shadow -->
+    <div class="d-flexs">
+      <div class="box shadow-none"></div>
+      <div class="box drop-shadow-none"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow-sm"></div>
+      <div class="box drop-shadow-sm"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow"></div>
+      <div class="box drop-shadow"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow-md"></div>
+      <div class="box drop-shadow-md"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow-lg"></div>
+      <div class="box drop-shadow-lg"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow-xl"></div>
+      <div class="box drop-shadow-xl"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow-2xl"></div>
+      <div class="box drop-shadow-2xl"></div>
+    </div>
+    <div class="d-flexs">
+      <div class="box shadow-inner"></div>
+    </div>
+  </body>
+</html>
+<!-- 
+Note : a pyin ko htoke tat shadow
+shadow-none   ==> box-shadow: h b v c;
+shadow-sm
+shadow
+shadow-md
+shadow-lg
+shadow-xl
+shadow-2xl
+
+shadow-inner  ==> box-shadow: inset h v b c;
+
+drop-shadow-none   ==> filter: drop-shadow(h v b c);
+drop-shadow-sm
+drop-shadow
+drop-shadow-md
+drop-shadow-lg
+drop-shadow-xl
+drop-shadow-2xl
+-->
