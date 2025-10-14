@@ -3,10 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>margin padding</title>
+    <title>margin && padding</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+      .bg-primary {
+        background-color: blue;
+      }
+      .bg-secondary {
+        background-color: gray;
+      }
+      .bg-success {
+        background-color: green;
+      }
+      .bg-warning {
+        background-color: orange;
+      }
+      .bg-danger {
+        background-color: crimson;
+      }
+      .bg-info {
+        background-color: skyblue;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-primary w-40 h-40 m-10"></div>
+    <div class="bg-secondary w-40 h-40 mx-10"></div>
+    <div class="bg-danger w-40 h-40 my-10"></div>
+    <div class="bg-warning w-40 h-40 ml-10"></div>
+    <div class="bg-success w-40 h-40 mr-10"></div>
+    <div class="bg-info w-40 h-40 mt-10"></div>
+    <div class="bg-primary w-40 h-40 mb-10"></div>
+    <hr />
+    <br />
+    <br />
+    <div class="bg-secondary w-100 h-100 p-5">
+      <div class="bg-info w-40 h-40"></div>
+    </div>
+    <br />
+    <div class="bg-secondary w-100 h-100 px-5">
+      <div class="bg-info w-40 h-40"></div>
+    </div>
+    <br />
+    <div class="bg-secondary w-100 h-100 py-5">
+      <div class="bg-info w-40 h-40"></div>
+    </div>
+    <br />
+    <div class="bg-secondary w-100 h-100 pl-5">
+      <div class="bg-info w-40 h-40"></div>
+    </div>
+    <br />
+    <div class="bg-secondary w-100 h-100" style="display: flex">
+      <div class="bg-info w-40 h-40 mr-5"></div>
+      <div class="bg-warning w-40 h-40"></div>
+    </div>
+    <br />
+    <div class="bg-secondary w-100 h-100 pt-5">
+      <div class="bg-info w-40 h-40"></div>
+    </div>
+    <br />
+    <div class="bg-secondary w-100 h-100 pb-5">
+      <div class="bg-danger w-40 h-40"></div>
+    </div>
+    <br />
+  </body>
 </html>
 <!-- 
 m-0 ==> margin: 0px;

@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>width and height</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .bg-primary {
+        background-color: blue;
+      }
+      .bg-secondary {
+        background-color: gray;
+      }
+      .bg-info {
+        background-color: skyblue;
+      }
+      .bg-success {
+        background-color: green;
+      }
+      .bg-warning {
+        background-color: orangered;
+      }
+      .bg-danger {
+        background-color: crimson;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-primary w-40">Div1</div>
+    <div class="bg-secondary w-96">Div2</div>
+    <div class="bg-success w-auto">Div3</div>
+    <div class="bg-info w-full">Div4</div>
+    <div class="bg-warning w-screen">Div5</div>
+    <div class="bg-danger w-1/2">Div5</div>
+    <br />
+    <hr />
+    <br />
+    <div class="bg-primary w-40 h-20">Div6</div>
+    <div class="bg-secondary w-96 h-96">Div7</div>
+    <div class="bg-warning w-auto h-auto">Div8</div>
+    <div class="bg-success w-full h-full">Div9</div>
+    <div class="bg-danger w-screen h-screen">Div10</div>
+    <div class="bg-secondary w-1/2 h-56">
+      <div class="bg-primary w-1/2 h-1/2">Div11(Parent height is 56)</div>
+    </div>
+    <br />
+  </body>
 </html>
 <!-- 
 w-0 ==> width: 0px;
