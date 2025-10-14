@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resize and user select</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- resize,select,appearance -->
+    <label for="bio1">Bio</label>
+    <textarea name="bio1" id="bio1" class="resize-none" rows="5"></textarea>
+    <hr />
+    <label for="bio1">Bio</label>
+    <textarea name="bio1" id="bio1" class="resize-x" rows="5"></textarea>
+    <hr />
+    <label for="bio1">Bio</label>
+    <textarea name="bio1" id="bio1" class="resize-y" rows="5"></textarea>
+    <hr />
+    <label for="bio1">Bio</label>
+    <textarea name="bio1" id="bio1" class="resize" rows="5"></textarea>
+    <hr />
+    <br />
+    <p class="select-none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ea, rem nobis saepe asperiores nulla corporis
+      accusamus modi deleniti nesciunt sunt voluptates tempora commodi provident sed corrupti! Eius hic, alias
+      accusamus, nulla id, aliquid magni ratione quam culpa ab consectetur ut ullam. Veritatis nostrum quos eos qui
+      cumque itaque, commodi temporibus eveniet, assumenda tenetur asperiores deleniti, esse molestias? Consectetur
+      facilis saepe architecto, perferendis in exercitationem, repudiandae libero corporis, corrupti totam autem modi
+      natus sunt distinctio. Aut saepe odit ex quidem corporis perferendis commodi iste, error est voluptatum debitis,
+      quam ullam optio quod veniam nam aspernatur velit beatae distinctio. Expedita, maxime.
+    </p>
+    <br />
+    <p class="select-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ea, rem nobis saepe asperiores nulla corporis
+      accusamus modi deleniti nesciunt sunt voluptates tempora commodi provident sed corrupti! Eius hic, alias
+      accusamus, nulla id, aliquid magni ratione quam culpa ab consectetur ut ullam. Veritatis nostrum quos eos qui
+      cumque itaque, commodi temporibus eveniet, assumenda tenetur asperiores deleniti, esse molestias? Consectetur
+      facilis saepe architecto, perferendis in exercitationem, repudiandae libero corporis, corrupti totam autem modi
+      natus sunt distinctio. Aut saepe odit ex quidem corporis perferendis commodi iste, error est voluptatum debitis,
+      quam ullam optio quod veniam nam aspernatur velit beatae distinctio. Expedita, maxime.
+    </p>
+    <br />
+    <p class="select-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ea, rem nobis saepe asperiores nulla corporis
+      accusamus modi deleniti nesciunt sunt voluptates tempora commodi provident sed corrupti! Eius hic, alias
+      accusamus, nulla id, aliquid magni ratione quam culpa ab consectetur ut ullam. Veritatis nostrum quos eos qui
+      cumque itaque, commodi temporibus eveniet, assumenda tenetur asperiores deleniti, esse molestias? Consectetur
+      facilis saepe architecto, perferendis in exercitationem, repudiandae libero corporis, corrupti totam autem modi
+      natus sunt distinctio. Aut saepe odit ex quidem corporis perferendis commodi iste, error est voluptatum debitis,
+      quam ullam optio quod veniam nam aspernatur velit beatae distinctio. Expedita, maxime.
+      <img
+        src="https://images.unsplash.com/photo-1760243875175-064c835a0b40?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1476"
+        alt="photo"
+        width="500"
+      />
+    </p>
+    <br />
+    <p class="select-all">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ea, rem nobis saepe asperiores nulla corporis
+      accusamus modi deleniti nesciunt sunt voluptates tempora commodi provident sed corrupti! Eius hic, alias
+      accusamus, nulla id, aliquid magni ratione quam culpa ab consectetur ut ullam. Veritatis nostrum quos eos qui
+      cumque itaque, commodi temporibus eveniet, assumenda tenetur asperiores deleniti, esse molestias? Consectetur
+      facilis saepe architecto, perferendis in exercitationem, repudiandae libero corporis, corrupti totam autem modi
+      natus sunt distinctio. Aut saepe odit ex quidem corporis perferendis commodi iste, error est voluptatum debitis,
+      quam ullam optio quod veniam nam aspernatur velit beatae distinctio. Expedita, maxime.
+      <img
+        src="https://images.unsplash.com/photo-1760243875175-064c835a0b40?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1476"
+        alt="photo"
+        width="500"
+      />
+    </p>
+    <hr />
+    <br />
+    <select name="city" id="city">
+      <option value="yg">Yangon</option>
+      <option value="mdy">Mandalay</option>
+      <option value="bg">Bago</option>
+    </select>
+    <br />
+    <br />
+    <select name="country" id="country" class="appearance-none">
+      <option value="mm">Myanmar</option>
+      <option value="th">Thailand</option>
+      <option value="sg">Singapore</option>
+    </select>
+    <br />
+    <br />
+  </body>
+</html>
+<!-- 
+resize-none     ==> resize:none;
+resize-x        ==> resize:horizontal;
+resize-y        ==> resize:vertical;
+resize          ==> resize:both;
+
+select-none ==> user-select:none;
+select-auto ==> user-select:auto;
+select-text ==> user-select:text;
+select-all ==> user-select:all; cursor cha lite tar nae a kone lone select win twr tal
+
+appearance-none ==> appearance:none;
+-->

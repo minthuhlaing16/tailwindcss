@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>liststyle</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      ul {
+        padding: 50px;
+      }
+      .width {
+        width: 650px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- list style -->
+    <ul class="list-none">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+    <ul class="list-disc">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+    <ul class="list-decimal">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+    <ul class="width list-decimal list-inside">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+    <ul class="width list-decimal list-outside">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </body>
+</html>
+<!-- 
+list-none  ==> list-style-type:none;
+list-disc  ==> list-style-type:disc;
+list-decimal  ==> list-style-type:decimal;
+list-inside  ==> list-style-position:inside;
+list-outside  ==> list-style-position:outside;
+-->
