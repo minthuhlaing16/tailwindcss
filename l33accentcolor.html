@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accent Color</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <form action="" method="">
+      <div>
+        <label>Fav Music</label>
+        <label> <input type="checkbox" name="favmusic" id="favpop" class="" value="p" /> Pop </label>
+        <label>
+          <input type="checkbox" name="favmusic" id="favrock" class="accent-zinc-500" value="r" checked />
+          Rock
+        </label>
+        <label> <input type="checkbox" name="favmusic" id="favjazz" class="accent-red-600" value="j" /> Jazz </label>
+        <label> <input type="checkbox" name="favmusic" id="favrap" class="accent-rose-400" value="rp" /> Rap </label>
+      </div>
+      <div>
+        <label for="score">Score</label>
+        <input type="range" name="score" id="score" class="accent-teal-400" min="0" max="100" value="80" />
+      </div>
+    </form>
+  </body>
+</html>
+
+<!-- 
+accent-black ==> accent-color:black;
+accent-white ==> accent-color:white;
+-->
