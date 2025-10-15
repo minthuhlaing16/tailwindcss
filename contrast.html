@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contrast</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 100vh;
+        /* object-fit: contain; */
+        /* object-fit: cover; */
+        object-fit: fill;
+        /* filter: blur(2px); */
+        /* filter: contrast(1); */
+        /* filter: contrast(1.2); */
+        /* filter: contrast(50%); */
+        /* filter: contrast(0); */
+        filter: contrast(200%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- contrast -->
+    <img
+      src="https://images.unsplash.com/photo-1563387852576-964bc31b73af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1507"
+      alt="photo"
+    />
+  </body>
+</html>
+<!-- 
+contrast-0  ==> filter:contrast(0); 1,2,3,4...
+-->

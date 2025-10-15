@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grayscaleandinvertandsepia</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .box {
+        width: 800px;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- grayscale and invert and sepia -->
+    <h1 class="text-5xl text-center text-sky-700 my-10">Hover these pictures...</h1>
+    <div class="box grayscale-0">
+      <img
+        src="https://images.unsplash.com/photo-1643780668909-580822430155?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
+        alt="photofromunsplash"
+      />
+    </div>
+    <br />
+    <hr />
+    <div class="box hover:grayscale">
+      <img
+        src="https://images.unsplash.com/photo-1643780668909-580822430155?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
+        alt="photofromunsplash"
+      />
+    </div>
+    <br />
+    <hr />
+    <div class="box invert-0">
+      <img
+        src="https://images.unsplash.com/photo-1643780668909-580822430155?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
+        alt="photofromunsplash"
+      />
+    </div>
+    <br />
+    <hr />
+    <div class="box hover:invert">
+      <img
+        src="https://images.unsplash.com/photo-1643780668909-580822430155?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
+        alt="photofromunsplash"
+      />
+    </div>
+    <br />
+    <hr />
+    <div class="box sepia-0">
+      <img
+        src="https://images.unsplash.com/photo-1643780668909-580822430155?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
+        alt="photofromunsplash"
+      />
+    </div>
+    <br />
+    <hr />
+    <div class="box hover:sepia">
+      <img
+        src="https://images.unsplash.com/photo-1643780668909-580822430155?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
+        alt="photofromunsplash"
+      />
+    </div>
+    <br />
+    <hr />
+  </body>
+</html>
+<!-- 
+grayscale-0  ==> filter: grayscale(50%); ==> 0% to 100%;
+invert-0  ==> filter: invert(75%);
+sepia-0  ==> filter: sepia(60%);
+-->
