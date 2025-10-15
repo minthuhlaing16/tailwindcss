@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform origin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        height: 100%;
+        background: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transform-origin -->
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-center duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-left duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-right duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-top duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-bottom duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-top-left duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-top-right duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-bottom-left duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+    <div class="border-2 border-yellow-500 w-100 h-100 m-20">
+      <img
+        class="w-full h-full hover:rotate-45 origin-bottom-right duration-1000"
+        src="https://images.unsplash.com/photo-1760301269447-fbc82b5a8d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150"
+        alt="photo"
+      />
+    </div>
+  </body>
+</html>
+<!-- 
+origin-center ==> transform-origin: center;
+origin-top
+origin-bottom
+origin-left
+origin-right
+
+origin-top-left
+origin-top-right
+origin-bottom-left
+origin-bottom-right
+-->
