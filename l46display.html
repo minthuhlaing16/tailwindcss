@@ -5,8 +5,321 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Display</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .box {
+        width: 250px;
+        height: 250px;
+        background-color: silver;
+      }
+      .bigbox {
+        width: 600px;
+        height: 300px;
+        background-color: gray;
+      }
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: crimson;
+        color: white;
+      }
+      .div2 {
+        width: 100px;
+        height: 100px;
+        background-color: navy;
+        color: white;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">flex</h1>
+    <div class="box flex">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid</h1>
+    <div class="box grid">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify-content:start;</h1>
+    <div class="box flex justify-start">
+      <div class="div1">Div1</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify-content:center;</h1>
+    <div class="box flex justify-center">
+      <div class="div1">Div1</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify-content:end;</h1>
+    <div class="box flex justify-end">
+      <div class="div1">Div1</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify-content:space-between;</h1>
+    <div class="bigbox flex justify-between">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify-content:space-around;</h1>
+    <div class="bigbox flex justify-around">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify-content:space-evenly;</h1>
+    <div class="bigbox flex justify-evenly">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">align-items-start</h1>
+    <div class="bigbox flex items-start">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">align-items-end</h1>
+    <div class="bigbox flex items-end">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">align-items-center</h1>
+    <div class="bigbox flex items-center">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">justify content:center and align-items:center</h1>
+    <div class="bigbox flex justify-center items-center">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl bg-red-800 text-white inline">Hello Myanmar</h1>
+    <h1 class="text-2xl bg-orange-800 text-white inline">Hi Myanmar</h1>
+    <br />
+    <br />
+    <span class="text-2xl bg-rose-800 text-white block">Hello Myanmar</span>
+    <span class="text-2xl bg-green-800 text-white block">Hi Myanmar</span>
+    <br />
+    <span class="text-2xl bg-purple-800 text-white inline-block">Hello Myanmar</span>
+    <span class="text-2xl bg-sky-800 text-white inline-block">Hi Myanmar</span>
+    <br />
+    <span class="text-3xl bg-indigo-400 text-white">HEllo John how are you?</span>
+    <span class="text-3xl bg-indigo-400 text-white hidden">HEllo John how are you?</span>
+    <br />
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-items:start;</h1>
+    <div class="bigbox grid justify-items-start">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-items:center;</h1>
+    <div class="bigbox grid justify-items-center">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-items:end;</h1>
+    <div class="bigbox grid justify-items-end">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-items:stretch;</h1>
+    <div class="bigbox grid justify-items-stretch">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-self:start;</h1>
+    <div class="bigbox grid">
+      <div class="div1 justify-self-start">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-self:center;</h1>
+    <div class="bigbox grid">
+      <div class="div1 justify-self-center">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-self:end;</h1>
+    <div class="bigbox grid">
+      <div class="div1 justify-self-end">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and justify-self:auto;</h1>
+    <div class="bigbox grid">
+      <div class="div1 justify-self-auto">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-self:start;</h1>
+    <div class="bigbox grid">
+      <div class="div1 self-start">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-self:center;</h1>
+    <div class="bigbox grid">
+      <div class="div1 self-center">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-self:end;</h1>
+    <div class="bigbox grid">
+      <div class="div1 self-end">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-self:stretch;</h1>
+    <div class="bigbox grid">
+      <div class="div1 self-stretch">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-self:baseline;</h1>
+    <div class="bigbox grid">
+      <div class="div1 self-baseline">Div1</div>
+      <div class="div2">Div2</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">flex and align-self:start;</h1>
+    <div class="bigbox flex">
+      <div class="div1">Div1</div>
+      <div class="div2 self-start">Div2</div>
+      <div class="div1">Div1</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">flex and align-self:center;</h1>
+    <div class="bigbox flex">
+      <div class="div1">Div1</div>
+      <div class="div2 self-center">Div2</div>
+      <div class="div1">Div1</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">flex and align-self:end;</h1>
+    <div class="bigbox flex">
+      <div class="div1">Div1</div>
+      <div class="div2 self-end">Div2</div>
+      <div class="div1">Div1</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:flex-start;</h1>
+    <div class="bigbox grid grid-cols-3 content-start">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:flex-center;</h1>
+    <div class="bigbox grid grid-cols-3 content-center">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:flex-end;</h1>
+    <div class="bigbox grid grid-cols-3 content-end">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:space-between;</h1>
+    <div class="bigbox grid grid-cols-3 content-between">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:space-around;</h1>
+    <div class="bigbox grid grid-cols-3 content-around">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:space-evenly;</h1>
+    <div class="bigbox grid grid-cols-3 content-evenly">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+    <h1 class="text-2xl text-rose-500 text-center bg-green-50">grid and align-content:space-baseline;</h1>
+    <div class="bigbox grid grid-cols-3 content-baseline">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div1">Div1</div>
+      <div class="div2">Div4</div>
+      <div class="div1">Div5</div>
+      <div class="div2">Div6</div>
+    </div>
+    <br />
+    <hr />
+  </body>
 </html>
 <!-- 
 flex ==> display:flex;
@@ -23,7 +336,34 @@ justify-between ==> justify-content:space-between;
 justify-around ==> justify-content:space-around;
 justify-evenly ==> justify-content:space-evenly;
 
+justify-items-start ==> justify-items: start;
+justify-items-between ==> justify-items: between;
+justify-items-end ==> justify-items: end;
+justify-items-stretch ==> justify-items:stretch;
+
+justify-self-start ==> justify-self: start;
+justify-self-center ==> justify-self: center;
+justify-self-end ==> justify-self: end;
+justify-self-stretch ==> justify-self:stretch;
+
 items-start ==> align-items:start;
 items-center ==> align-items:center;
 items-end ==> align-items:end;
+
+self-auto ==> align-self:auto;
+self-start ==> align-self:flex-start;
+self-center ==> align-self:center;
+self-end ==> align-self:flex-end;
+
+self-stretch ==> align-self:stretch;
+self-baseline ==> align-self:baseline;
+
+content-start ==> align-content:flex-start;
+content-center ==> align-content:center;
+content-end ==> align-content:flex-end;
+
+content-between ==> align-content:space-between;
+content-around ==> align-content:space-around;
+content-evenly ==> align-content:space-evenly;
+content-baseline ==> align-content:baseline;
 -->
