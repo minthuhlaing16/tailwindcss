@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>flex</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-	<!-- todo flex -->
-</body>
+  </head>
+  <body>
+    <!-- todo flex -->
+    <h1>This is tailwind css using cdn link</h1>
+    <h5>flex none</h5>
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 flex-none">div</div>
+      <div class="w-44 h-20 bg-pink-500">div</div>
+      <div class="w-44 h-20 bg-rose-500">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+    <h5>flex-auto</h5>
+    <!-- ? flex-row ma par lae alote lote tal -->
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 flex-auto">div</div>
+      <div class="w-44 h-20 bg-pink-500">div</div>
+      <div class="w-44 h-20 bg-rose-500">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+    <h5>flex-1</h5>
+    <!-- ? flex-row ma par lae alote lote tal -->
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 flex-1">div</div>
+      <div class="w-44 h-20 bg-pink-500">div</div>
+      <div class="w-44 h-20 bg-rose-900 flex-auto">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+    <h5>flex-initial</h5>
+    <!-- ? flex-row ma par lae alote lote tal -->
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 flex-initial">div</div>
+      <!-- ! flex-auto and grow are the same -->
+      <!-- <div class="w-44 h-20 bg-pink-500 flex-auto">div</div> -->
+      <div class="w-44 h-20 bg-pink-500 grow">div</div>
+      <div class="w-44 h-20 bg-rose-900 flex-none">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+    <h5>flex-1</h5>
+    <!-- ? flex-row ma par lae alote lote tal -->
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 grow">div</div>
+      <div class="w-44 h-20 bg-pink-500 grow-0">div</div>
+      <div class="w-44 h-20 bg-rose-900 grow">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+    <h5>flex-1</h5>
+    <!-- ? flex-row ma par lae alote lote tal -->
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 flex-none">div</div>
+      <div class="w-44 h-20 bg-pink-500 shrink">div</div>
+      <div class="w-44 h-20 bg-rose-900 flex-none">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+    <h5>flex-1</h5>
+    <!-- ? flex-row ma par lae alote lote tal -->
+    <div class="text-white flex flex-row">
+      <div class="w-44 h-20 bg-stone-500 flex-none">div</div>
+      <div class="w-44 h-20 bg-pink-500 shrink-0">div</div>
+      <div class="w-44 h-20 bg-rose-900 flex-none">div</div>
+      <div class="w-44 h-20 bg-red-500">div</div>
+      <div class="w-44 h-20 bg-orange-500">div</div>
+      <div class="w-44 h-20 bg-teal-500">div</div>
+    </div>
+    <hr class="my-5" />
+  </body>
 </html>
 <!-- 
 flex-none ==> flex:none;
