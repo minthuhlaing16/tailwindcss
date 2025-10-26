@@ -1,16 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>backgroundclip</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>backgroundclip</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-	
-</body>
+  </head>
+  <body class="bg-black">
+    <!-- todo background-clip -->
+    <div
+      class="w-300 h-100 border-8 border-yellow-400 border-dashed m-5 bg-gradient-to-t from-red-400 to-green-400 flex justify-center items-center bg-clip-border"
+    >
+      <p>
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+
+    <div
+      class="w-300 h-100 border-8 border-yellow-400 border-dashed m-5 bg-gradient-to-r from-red-400 to-green-400 flex justify-center items-center bg-clip-text text-transparent"
+    >
+      <p class="text-2xl">
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+
+    <div
+      class="w-300 h-100 border-8 border-yellow-400 border-dashed m-5 bg-gradient-to-r from-red-400 to-green-400 flex justify-center items-center bg-clip-content p-20"
+    >
+      <p>
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+
+    <div
+      class="w-300 h-100 border-8 border-yellow-400 border-dashed m-5 bg-gradient-to-r from-red-400 to-green-400 flex justify-center items-center bg-clip-padding"
+    >
+      <p>
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+    <div
+      class="text-9xl flex justify-center items-center font-extrabold text-transparent bg-clip-text"
+      style="
+        background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aTh5YjMxZGc1NmM3aXo5OHRzMHBhZ2h0bGdtZ3VzM3NqN20wajh4ayZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/lBW2QStfeOW3ajVrGL/giphy.gif);
+        background-size: cover;
+      "
+    >
+      <p>Hello John !</p>
+    </div>
+
+    <div
+      class="h-50 m-5 bg-gradient-to-tl from-red-600 to-sky-600 text-9xl flex justify-center items-center text-transparent bg-clip-text font-extrabold"
+    >
+      <p>Welcome Home</p>
+    </div>
+
+    <div
+      class="text-9xl font-extrabold text-transparent bg-gradient-to-r from-red-600 to-rose-900 bg-clip-content p-20 border-8 border-dashed border-sky-500 text-center"
+    >
+      <span class="bg-gradient-to-tr from-yellow-500 to-emerald-600 via-rose-400 bg-clip-text">Hello Myanmar</span>
+      <br />
+      <br />
+      <span class="bg-gradient-to-br from-teal-500 to-fuchsia-700 via-amber-400 bg-clip-text">Hello Singapore</span>
+    </div>
+
+    <hr class="my-5" />
+
+    <p class="text-4xl font-extrabold">
+      <span class="bg-gradient-to-r from-red-500 to-blue-500 box-decoration-slice"
+        >hello <br />
+        world <br />
+        my <br />
+        name <br />
+        is <br />
+        John doe
+      </span>
+    </p>
+    <br />
+    <br />
+    <p class="text-4xl font-extrabold">
+      <span class="bg-gradient-to-r from-red-500 to-blue-500 box-decoration-clone"
+        >hello <br />
+        world <br />
+        my <br />
+        name <br />
+        is <br />
+        John doe
+      </span>
+    </p>
+  </body>
 </html>
 
+<!-- 19:12 -->
 <!--  
 bg-clip-border  ==> background-clip:border-box;
 bg-clip-padding ==> background-clip:padding-box;

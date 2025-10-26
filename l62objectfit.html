@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>objectfit</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-stone-100">
+    <h1 class="text-5xl text-indigo-500 font-bold text-center my-2">Normal</h1>
+    <div class="bg-gradient-to-l from-violet-500 to-pink-500">
+      <img src="img/chart.jpg" alt="chart" class="w-96 h-56 mx-auto" />
+    </div>
+
+    <h1 class="text-5xl text-indigo-500 font-bold text-center my-2">Object-none</h1>
+    <div class="bg-gradient-to-l from-violet-500 to-pink-500">
+      <img src="img/chart.jpg" alt="chart" class="w-96 h-56 mx-auto object-none" />
+    </div>
+
+    <h1 class="text-5xl text-indigo-500 font-bold text-center my-2">Object-contain</h1>
+    <div class="bg-gradient-to-l from-violet-500 to-pink-500">
+      <img src="img/chart.jpg" alt="chart" class="w-96 h-56 mx-auto object-contain" />
+    </div>
+
+    <h1 class="text-5xl text-indigo-500 font-bold text-center my-2">Object-cover</h1>
+    <div class="bg-gradient-to-l from-violet-500 to-pink-500">
+      <img src="img/chart.jpg" alt="chart" class="w-96 h-56 mx-auto object-cover" />
+    </div>
+
+    <h1 class="text-5xl text-indigo-500 font-bold text-center my-2">Object-fill</h1>
+    <div class="bg-gradient-to-l from-violet-500 to-pink-500">
+      <img src="img/chart.jpg" alt="chart" class="w-96 h-56 mx-auto object-fill" />
+    </div>
+
+    <h1 class="text-5xl text-indigo-500 font-bold text-center my-2">Object-scale-down</h1>
+    <div class="bg-gradient-to-l from-violet-500 to-pink-500">
+      <img src="img/chart.jpg" alt="chart" class="w-96 h-56 mx-auto object-scale-down" />
+    </div>
+  </body>
+</html>
+
+<!-- 
+object-none						object-fit:cover;			
+object-contain					object-fit:contain;
+object-cover					object-fit:cover;
+object-fill						object-fit:fill;
+object-scale-down				object-fit:scale-down;
+ -->
