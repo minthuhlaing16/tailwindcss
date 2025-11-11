@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-stone-900">
+	<nav class="bg-white p-5 md:flex md:justify-between md:items-center">
+		<div class="flex justify-between items-center">
+			<span class="text-2xl cursor-pointer">
+				<img src="img/logo.png" class="w-12 inline" alt="logo">Neo Smart
+			</span>
+			<span class="text-2xl cursor-pointer mx-4 md:hidden">
+				<i class="fas fa-bars togglemenus" onclick="togglemenu(this)"></i>
+			</span>
+		</div>	
+		<ul class="w-full bg-white md:w-auto md:flex md:items-center md:pl-0 md:py-0 pl-5 py-5 opacity-0 absolute left-0 md:static md:opacity-100 transition-all duration-500">
+			<li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="hover:uppercase hover:text-emerald-500 transition-all duration-500 hover:text-lg">Home</a></li>
+			<li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="hover:uppercase hover:text-emerald-500 transition-all duration-500 hover:text-lg">News</a></li>
+			<li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="hover:uppercase hover:text-emerald-500 transition-all duration-500 hover:text-lg">Pages</a></li>
+			<li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="hover:uppercase hover:text-emerald-500 transition-all duration-500 hover:text-lg">About</a></li>
+			<li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="hover:uppercase hover:text-emerald-500 transition-all duration-500 hover:text-lg">Contact</a></li>
+			<li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="hover:uppercase bg-emerald-500 text-white px-6 py-2 hover:bg-emerald-900 transition-all duration-700 rounded-2xl">Signup</a></li>
+		</ul>
+	</nav>
+
+	<script type="text/javascript">
+		function togglemenu(ele){
+			const getul = document.querySelector("ul");
+
+			// Method 1
+			// if(ele.classList.contains("togglemenus")){
+			// 	ele.classList.remove("togglemenus");
+			// 	getul.classList.add("opacity-100");
+			// }else{
+			// 	ele.classList.add("togglemenus");
+			// 	getul.classList.remove("opacity-100");
+			// }
+
+
+			// Method 2
+			ele.classList.contains('togglemenus') ? (ele.classList.remove("togglemenus"),getul.classList.add("opacity-100")):(ele.classList.add("togglemenus"),getul.classList.remove("opacity-100"));
+		}
+	</script>
+</body>
+</html>
