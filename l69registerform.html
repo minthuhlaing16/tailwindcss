@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>registerform</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="bg-stone-400">
-	<div class="h-screen flex justify-center items-center">
-		 <div class="">
-		 	<div class="">
-		 		<img src="./img/login.jpg" alt="register">
-		 	</div>
-		 	<div class="">
-		 		<div class="">
-		 			<h1 class="">Register With Us</h1>
-		 		</div>
-		 		<div class="">
-		 			<form action="" method="">
-		 				<div class="flex">
-		 					<div>
-		 						<label for="firstname">First Name</label>
-		 						<div>
-		 							<div class=""><i class="fas fa-user"></i></div>
-		 							<input type="text" name="firstname" id="firstname" class="" placeholder="First Name">
-		 						</div>
-		 					</div>
-		 					<div>
-		 						<label for="lastname">Last Name</label>
-		 						<div>
-		 							<div class=""><i class="fas fa-user"></i></div>
-		 							<input type="text" name="lastname" id="lastname" class="" placeholder="Last Name">
-		 						</div>
-		 					</div>
-		 				</div>
-		 				<div>
-		 					<button type="submit" class="">Register Now</button>
-		 				</div>
-		 			</form>
-		 		</div>
-		 	</div>
-		 </div>
-	</div>
-</body>
-</html>
+   
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+         registerform
+      </title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   
+   <body class="bg-stone-800">
+         <div class="h-screen flex justify-center items-center">
+            <div class="bg-gray-50 text-gray-500 rounded-xl flex" style="max-width: 1000px;">
+               <div class="w-1/2 hidden md:block">
+                  <img src="https://static.vecteezy.com/system/resources/previews/003/689/228/non_2x/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg"
+                  alt="registerform" class="w-auto">
+               </div>
+               <div class="w-full md:w-1/2 px-5 py-10">
+                  <div class="text-center mb-10">
+                     <h1 class="font-bold text-gray-900 text-3xl">
+                        Register with us.
+                     </h1>
+                  </div>
+                  <form action="" method="">
+                     <div class="flex">
+                        <div class="w-1/2 px-3 mb-10">
+                           <label for="firstname" class="text-xs font-semibold px-1">
+                              First Name
+                           </label>
+                           <div class="flex">
+                              <div class="w-10 flex justify-center items-center">
+                                 <i class="fa fa-user text-gray-300">
+                                 </i>
+                              </div>
+                              <input type="text" name="firstname" id="firstname" class="w-full border-2 border-gray-200 outline-none focus:border-indigo-500 pl-12 py-2 -ml-10"
+                              placeholder="First Name">
+                           </div>
+                        </div>
+                        <div class="w-1/2 px-3 mb-10">
+                           <label for="lastname" class="text-xs font-semibold px-1">
+                              Last Name
+                           </label>
+                           <div class="flex">
+                              <div class="w-10 flex justify-center items-center">
+                                 <i class="fa fa-user text-gray-300">
+                                 </i>
+                              </div>
+                              <input type="text" name="lastname" id="lastname" class="w-full border-2 border-gray-200 outline-none focus:border-indigo-500 pl-12 py-2 -ml-10"
+                              placeholder="Last Name">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w-full px-3 mb-10">
+                        <label for="email" class="text-xs font-semibold px-1">
+                           Email
+                        </label>
+                        <div class="flex">
+                           <div class="w-10 flex justify-center items-center">
+                              <i class="far fa-envelope text-gray-300">
+                              </i>
+                           </div>
+                           <input type="email" name="email" id="email" class="w-full border-2 border-gray-200 outline-none focus:border-indigo-500 pl-12 py-2 -ml-10"
+                           placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="w-full px-3 mb-10">
+                        <label for="password" class="text-xs font-semibold px-1">
+                           Password
+                        </label>
+                        <div class="flex">
+                           <div class="w-10 flex justify-center items-center">
+                              <i class="fas fa-key text-gray-300">
+                              </i>
+                           </div>
+                           <input type="password" name="password" id="password" class="w-full border-2 border-gray-200 outline-none focus:border-indigo-500 pl-12 py-2 -ml-10"
+                           placeholder="Password">
+                        </div>
+                     </div>
+                     <button type="submit" class="w-full bg-indigo-500 text-white py-3 font-semibold cursor-pointer hover:bg-indigo-900 transition-all duration-300 rounded uppercase hover:shadow-lg">
+                        Register Now
+                     </button>
+                  </form>
+                  <div class="text-center mt-12">
+                     <p class="text-sm">
+                        Already Register? Login
+                        <a href="javascript:void(0);" class="text-indigo-600">
+                           Here!!
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </body>
 
-45:55 l67:l69
+</html>
