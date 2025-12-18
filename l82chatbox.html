@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat box</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-stone-100">
+    <div class="h-screen flex justify-center items-center">
+      <div class="w-[1000px] bg-[#f4f4f4] rounded-xl p-5">
+        <div class="shadow-lg rounded-lg">
+          <div class="flex justify-between items-center border shadow-sm rounded-lg p-5">
+            <h3 class="font-semibold text-2xl">chat room</h3>
+            <div class="w-1 h-1 bg-stone-500 text-white flex justify-center items-center p-2">-</div>
+          </div>
+          <div class="flex justify-between">
+            <div class="w-full px-5">
+              <div class="mt-5 h-[400px] overflow-y-auto">
+                <div class="flex justify-start mb-3">
+                  <img src="image/users/agen-s-3-1.jpg" alt="user1" class="w-8 h-8 object-cover rounded-full" />
+                  <p class="bg-gray-700 text-white rounded-tr-2xl rounded-br-2xl px-3 py-4 ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="flex justify-start mb-3">
+                  <img src="image/users/agen-s-3-1.jpg" alt="user1" class="w-8 h-8 object-cover rounded-full" />
+                  <p class="bg-gray-700 text-white rounded-tr-2xl rounded-br-2xl px-3 py-4 ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="flex justify-end mb-3">
+                  <p class="bg-emerald-600 text-white rounded-tl-2xl rounded-bl-2xl px-3 py-4 mr-2">Lorem ipsum dolor sit</p>
+                  <img src="image/users/agen-s-3-2.jpg" alt="user2" class="w-8 h-8 object-cover rounded-full" />
+                </div>
+                <div class="flex justify-start mb-3">
+                  <img src="image/users/agen-s-3-1.jpg" alt="user1" class="w-8 h-8 object-cover rounded-full" />
+                  <p class="bg-gray-700 text-white rounded-tr-2xl rounded-br-2xl px-3 py-4 ml-2">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="flex justify-end mb-3">
+                  <p class="bg-emerald-600 text-white rounded-tl-2xl rounded-bl-2xl px-3 py-4 mr-2">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aspernatur quidem, labore expedita amet consectetur.
+                  </p>
+                  <img src="image/users/agen-s-3-2.jpg" alt="user2" class="w-8 h-8 object-cover rounded-full" />
+                </div>
+                <div class="flex justify-start mb-3">
+                  <img src="image/users/agen-s-3-1.jpg" alt="user1" class="w-8 h-8 object-cover rounded-full" />
+                  <p class="bg-gray-700 text-white rounded-tr-2xl rounded-br-2xl px-3 py-4 ml-2">Lorem ipsum dolor sit amet Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div class="py-5">
+                <form action="" method="">
+                  <input type="text" name="messagetxt" id="messagetxt" class="w-full bg-stone-300 rounded-xl px-3 py-5 focus:outline-none" placeholder="Enter your message" />
+                </form>
+              </div>
+            </div>
+            <div class="w-2/5 h-[500px] border-l-2 overflow-y-auto">
+              <div class="border-b-2 px-2 py-3">
+                <form action="" method="">
+                  <input type="text" name="search" id="search" class="w-full bg-stone-300 rounded-xl p-2 focus:outline-none" placeholder="Search by name..." />
+                </form>
+              </div>
+              <div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/user1.jpg" alt="user1" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.July</h3>
+                    <p class="text-gray-400">Where are you now? 5:50 P.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/user2.jpg" alt="user2" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Mr Helen</h3>
+                    <p class="text-gray-400">how are you? 5:30 A.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/user3.jpg" alt="user3" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.August</h3>
+                    <p class="text-gray-400">Can you come with me? 4:49 P.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/agent-1.jpg" alt="agent1" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.December</h3>
+                    <p class="text-gray-400">Are you available? 6:00 P.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/agent-2.jpg" alt="agent2" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.September</h3>
+                    <p class="text-gray-400">Are you ok? 5:50 A.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/client1.jpg" alt="client1" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.February</h3>
+                    <p class="text-gray-400">When did you go to sleep? 12:00 P.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/client2.jpg" alt="client2" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.Octuber</h3>
+                    <p class="text-gray-400">World War z? 5:50 P.M</p>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center border-b-2 px-2 py-4">
+                  <div class="w-1/4">
+                    <img src="image/users/client3.jpg" alt="client3" class="w-12 h-12 object-cover rounded-full" />
+                  </div>
+                  <div class="w-full mx-2">
+                    <h3 class="text-lg font-semibold">Ms.July</h3>
+                    <p class="text-gray-400">Where are you now? 5:50 P.M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
