@@ -12,43 +12,89 @@
       <nav class="">
         <div>
           <!-- todo icon -->
-          <div class="">
-            <img src="./image/fav/favicon.png" alt="favicon" />
+          <div class="flex items-center">
+            <img src="./image/fav/favicon.png" id="logo" class="w-16 mr-5" alt="favicon" />
             <h2 class="">DTL Photo Studio</h2>
           </div>
           <!-- todo menu  -->
-          <div class="">
-            <a href="javascript:void(0);" class="hover:">Location</a>
-            <a href="javascript:void(0);" class="hover:">Equipment</a>
-            <a href="javascript:void(0);" class="hover:">Blog</a>
-            <a href="javascript:void(0);" class="hover:">FAQ</a>
-            <a href="javascript:void(0);" class="hover:">Signup</a>
-            <a href="javascript:void(0);" class="hover:">Login</a>
+          <div class="hidden uppercase space-x-10 md:flex items-center">
+            <a href="javascript:void(0);" class="hover:tracking-widest hover:text-slate-600 transition-all duration-500 ease-out">Location</a>
+            <a href="javascript:void(0);" class="hover:tracking-widest hover:text-slate-600 transition-all duration-500 ease-out">Equipment</a>
+            <a href="javascript:void(0);" class="hover:tracking-widest hover:text-slate-600 transition-all duration-500 ease-out">Blog</a>
+            <a href="javascript:void(0);" class="hover:tracking-widest hover:text-slate-600 transition-all duration-500 ease-out">FAQ</a>
+            <a href="javascript:void(0);" class="hover:tracking-widest hover:text-slate-600 transition-all duration-500 ease-out">Signup</a>
+            <a href="javascript:void(0);" class="login-btn">Login</a>
           </div>
           <!-- todo burger button -->
-          <button type="button" class="" id="menu-btn">
+          <button type="button" class="block md:hidden focus:outline-none burger-btn" id="menu-btn">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
           </button>
         </div>
         <!-- todo burger menu -->
-        <div class="">
-          <div class=""><a href="javascript:void(0);" class="hover:">Location</a></div>
-          <div class=""><a href="javascript:void(0);" class="hover:">Equipment</a></div>
-          <div class=""><a href="javascript:void(0);" class="hover:">Blog</a></div>
-          <div class=""><a href="javascript:void(0);" class="hover:">FAQ</a></div>
-          <div class=""><a href="javascript:void(0);" class="hover:">Signup</a></div>
-          <div class=""><a href="javascript:void(0);" class="hover:">Login</a></div>
+        <div id="menu" class="hidden w-full h-full bg-slate-800 text-white uppercase tracking-widest fixed inset-0 z-20 px-6 py-1 opacity-90">
+          <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Location</a></div>
+          <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Equipment</a></div>
+          <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Blog</a></div>
+          <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">FAQ</a></div>
+          <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Signup</a></div>
+          <div class="text-center py-3"><a href="javascript:void(0);" class="hover:">Login</a></div>
         </div>
       </nav>
     </header>
     <!-- todo End Header -->
     <!-- todo Start Banner -->
-    <div class=""></div>
+    <section class="">
+      <div class="container flex flex-col-reverse mx-auto md:flex-row">
+        <div class="flex flex-col space-y-10 lg:w-1/2 mt-16">
+          <h1 class="font-semibold text-center text-lg lg:text-left lg:text-3xl">That's Your the Best Studio</h1>
+          <p class="text-center text-base text-gray-500 lg:text-2xl lg:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia sapiente, quod eveniet veniam animi! Quidem eum voluptas sapiente laboriosam dicta pariatur aspernatur porro consectetur
+            sequi? Inventore, sint commodi? Ut?
+          </p>
+          <div class="space-x-4 flex justify-center lg:justify-start">
+            <a
+              href="javascript:void(0);"
+              class="transition-colors duration-500 ease-out bg-indigo-500 text-white text-sm font-semibold rounded shadow-md border-slate-500 hover:bg-white hover:text-indigo-600 p-4"
+              >Quotation</a
+            >
+            <a
+              href="javascript:void(0);"
+              class="transition-colors duration-500 ease-out bg-slate-500 text-white text-sm font-semibold rounded shadow-md border-slate-500 hover:bg-white hover:text-slate-900 p-4"
+              >Find Out</a
+            >
+          </div>
+        </div>
+        <div class="lg:1/2 mx-auto">
+          <img src="image/etc/camera.png" alt="camera" class="w-[550px]" />
+        </div>
+      </div>
+    </section>
     <!-- todo End Banner -->
     <!-- todo Start Signup -->
-    <section class=""></section>
+    <section class="container mx-auto py-20 lg:py-[30px]">
+      <div class="flex flex-wrap items-center">
+        <div>
+          <span>Find your new Dream Picture</span>
+          <h2>Get started with our studio.</h2>
+        </div>
+        <div class="">
+          <a
+            href="javascript:void(0);"
+            class="transition-colors duration-500 ease-out bg-rose-500 text-white text-sm font-semibold rounded shadow-md border-slate-500 hover:bg-white hover:text-rose-600 p-4"
+          >
+            Show Me
+          </a>
+          <a
+            href="javascript:void(0);"
+            class="transition-colors duration-500 ease-out bg-orange-500 text-white text-sm font-semibold rounded shadow-md border-slate-500 hover:bg-white hover:text-orange-900 p-4"
+          >
+            Signup
+          </a>
+        </div>
+      </div>
+    </section>
     <!-- todo End Signup -->
     <!-- todo Start FAQ -->
     <section class=""></section>
