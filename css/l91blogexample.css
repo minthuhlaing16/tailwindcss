@@ -1,0 +1,43 @@
+.burger-btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 24px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.line2 {
+  transform: translateY(7px);
+}
+
+.line3 {
+  transform: translateY(14px);
+}
+
+.crossx .line1 {
+  transform: rotate(45deg) translate(6px, 5px);
+  transition: background-color 1s linear;
+}
+.crossx .line2 {
+  display: none;
+}
+.crossx .line3 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+  transition: background-color 1s linear;
+}
+
+.crossx:hover .line1,
+.crossx:hover .line3 {
+  background-color: red;
+}
